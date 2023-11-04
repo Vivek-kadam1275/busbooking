@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+ 
+ 
+  <script></script>
+  <title></title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(images/second.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ 
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items:center !important;
+  height: 100vh;
+  background-attachment: fixed;
+  margin: -60px 0px;
+}
+.form{
+  width: 420px;
+  height: 540px;
+  background-color: rgba(27, 26, 26, 0.9);
+  box-shadow: 20px 35px 30px rgb(14, 1, 1);
+}
+.btn button {
+  padding: 3px;
+  margin: 30px 0px 40px 30px;
+  border-style: none;
+  background-color: transparent;
+  color: beige;
+  font-size: 18px;
+  font-weight: 550;
+}
+.formGroup{
+  display: flex;
+  justify-content: center;
+}
+.formGroup input{
+  border: none;
+  width: 80%;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+}
+input:focus {
+  outline: none !important;
+  border-bottom: 2px solid rgb(91, 243, 131);
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+.checkBox{
+  display: flex;
+  justify-content: center;
+  margin: 16px!important;
+}
+ 
+#checkbox{
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+.text{
+  color: rgb(199, 197, 197);
+  font-size: 13px;
+}
+.text1{
+   
+  color: aliceblue;
+    font-size: 28px;
+    margin: 0px 1px;
+}
+  
+
+.btn2{
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgb(10, 136, 43);
+  border-style: none;
+  color: white;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.btn2:hover{
+  background-color: rgba(10, 136, 43, 0.5);
+}
+.btn button:hover{
+  border-bottom: 2px solid rgb(91, 243, 131);
+}
+ 
+
+.login{
+  display: none;
+}
+ 
+
+.login{
+  margin-top: 40px;
+}
+.login .checkBox{
+  margin-top: 30px !important;
+}
+.text1{
+    text-align: center;
+}
+#signUpBtn{    margin: 30px 150px ;}
+
+nav {
+    background-color: #0a2454;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 6px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #179a98;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 400px 0px 0px 0px;
+}
+
+  </style>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+ 
+</head>
+ 
+<body>
+   
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Schedule</a></li>
+         
+    </ul>
+</nav>
+  
+  <div class="container">
+    <div class="form">
+      <div class="btn"><br>
+        <span class="text1">Bus Book Management System</span><br>
+        <button id="signUpBtn">SIGN UP</button>
+        <!-- <button class="loginBtn">LOG IN</button> -->
+      </div>
+      <form class="signUp" action="" method="get">
+        
+        <div class="formGroup">
+          <input type="text" id="userName" placeholder="User Name" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <!-- <input type="checkbox" name="checkbox" id="checkbox"> -->
+          <a href="login.html"><span class="text">Already have an Account?</span></a>
+        </div>
+        <div class="formGroup">
+          <button  class="btn2"> <a href="home.html">SignUp</a></button>
+          <button  class="btn2"><a href="index.html">Cancel</a></button>
+      </form>
+        
+
+     
+    </div>
+  </div>
+ <br>
+   
+</body>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
